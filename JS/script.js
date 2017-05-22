@@ -15,3 +15,9 @@ console.log(number);
 var time = 'scs15-29d 29-15fs5sd d29:555sd21-45 15-12 - d 23^0 23:00 155d 14 12-59 13-60';
 time = time.match(/(2[0-3]|[0-1]?[0-9])\:([0-5][0-9])|(2[0-3]|[0-1]?[0-9])\-([0-5][0-9])/g);
 console.log(time);
+
+var desk = 's-d  *D1sfs a3 ff g6 ddf3dI9=';
+desk = desk.toUpperCase();
+desk = desk.match(/[A-H][1-8]/gi);
+// добавить стиль 
+console.log(desk);
