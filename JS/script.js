@@ -18,6 +18,5 @@ console.log(time);
 
 var desk = 's-d  *D1sfs a3 ff g6 ddf3dI9=';
 desk = desk.toUpperCase();
-desk = desk.match(/[A-H][1-8]/gi);
-// добавить стиль 
+desk = desk.match(/[A-H][1-8]/g);
 console.log(desk);
