@@ -5,7 +5,7 @@
 
 function task1() {
 	var color = '#F0F8FF #979CA0 sdsd: 32dcd2 sddsdss  ,#97A4A0';
-	color = color.match(/#[A-F0-9]{6}/g);
+	color = color.match(/#[A-F0-9]{6}|#[A-F0-9]{3}/ig);
 	console.log(color);
 	document.getElementById('answer1').innerHTML = color;
 }
