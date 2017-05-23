@@ -2,18 +2,45 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>hw3</title>
-    <link rel="stylesheet" href="CSS/style.css">
+	<meta charset="UTF-8">
+	<title>hw3</title>
+	<link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
-    <input type="text" id="phoneNumberInput" placeholder="+7(123)-456-78-90"><br>
-    <input type="text" id="mailInput" placeholder="yourmail@somebox.com"><br>
-    <input type="text" id="passportInput" placeholder="1234 123456"><br>
+	<h4>Задание№1</h4>
+	<div>Напишите регулярное выражение для поиска HTML-цвета, заданного как #ABCDEF, то есть # и содержит затем 6 шестнадцатеричных символов.</div>
+	<p>Имеем '#F0F8FF #979CA0 sdsd: 32dcd2 sddsdss ,#97A4A0'</p>
+	<button type="button" id="task1">Ответ</button> <span>&nbsp;&nbsp;&nbsp;</span><span id="answer1"></span><br><br>
 
-    <button type="button" id="check">check</button>
-    <script src="JS/script.js"></script>
+	<h4>Задание№2</h4>
+	<div>Создайте регэксп, который ищет все положительные числа, в том числе и с десятичной точкой. Например, var str = "1.5 0 12. 123.4."</div>
+	<p>Имеем '1.5 0 12. h g 445 g 0.05 123.4fg.'</p>
+	<button type="button" id="task2">Ответ</button> <span>&nbsp;&nbsp;&nbsp;</span><span id="answer2"></span><br><br>
+
+	<h4>Задание№3</h4>
+	<div>Время может быть в формате часы:минуты или часы-минуты. И часы и минуты состоят из двух цифр, например 09:00, 21-30. Напишите регулярное выражение для поиска времени</div>
+	<p>Имеем 'scs15-29d 29-15fs5sd d29:555sd21-45 15-12 - d 23^0 23:00 155d 14 12-59 13-60'</p>
+	<button type="button" id="task3">Ответ</button> <span>&nbsp;&nbsp;&nbsp;</span><span id="answer3"></span><br><br>
+
+	<h4>Задание№4</h4>
+	<div>Написать проверку правильности координаты в файле инициализации шахматной доски c помощью регулярного выражения. Он должен иметь формат вида A6.</div>
+	<p>Имеем 's-d *D1sfs a3 ff g6 ddf3dI9='</p>
+	<button type="button" id="task4">Ответ</button> <span>&nbsp;&nbsp;&nbsp;</span><span id="answer4"></span><br><br>
+
+	<h4>Задание№5</h4>
+	<div> Написать регулярные выражения для следующих сущностей: номер телефона в формате +7(965)-123-45-67, email, серии и номера паспорта. Применить написанные регулярные выражения необходимо для валидации произвольной формы, в которой обязательно должны присутствовать описанные выше поля. Поля, которые проходят валидацию подсветить зеленым, остальные – красным.</div>
+	<br>
+	<input type="text" id="phoneNumberInput" placeholder="+7(123)-456-78-90">
+	<br>
+	<br>
+	<input type="text" id="mailInput" placeholder="yourmail@somebox.com"><br>
+	<br>
+	<input type="text" id="passportInput" placeholder="1234 123456">
+	<br>
+	<br>
+	<button type="button" id="check">Проверить</button>
+	<script src="JS/script.js"></script>
 </body>
 
 </html>
