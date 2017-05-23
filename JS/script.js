@@ -20,3 +20,27 @@ var desk = 's-d  *D1sfs a3 ff g6 ddf3dI9=';
 desk = desk.toUpperCase();
 desk = desk.match(/[A-H][1-8]/g);
 console.log(desk);
+
+function check() {
+    var phoneNumberInput = document.getElementById('phoneNumberInput');
+    var phoneNumberData = phoneNumberInput.value;
+    var phonePattern = /\+\d\(\d{3}\)\-\d{3}\-\d{2}-\d{2}/;
+
+    var mailInput = document.getElementById('mailInput');
+    var mailData = mailInput.value;
+    var mailPattern = /\w+\@\w+\.\w+/i;
+    
+    var passportInput = document.getElementById('passportInput');
+    var passportData = passportInput.value;
+    var passportPattern = /\d{4}\s\d{6}/;
+    
+    function setInputBackground(input,data,pattern){
+        if (pattern.test(data) == false) {
+        input.style.background = 'red';
+    } else input.style.background = 'green';
+    }
+    setInputBackground(phoneNumberInput,phoneNumberData,phonePattern);
+    setInputBackground(mailInput,mailData,mailPattern);
+    setInputBackground(passportInput,passportData,passportPattern);
+}
+document.getElementById('check').onclick = check;
